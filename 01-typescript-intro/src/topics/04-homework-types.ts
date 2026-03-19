@@ -1,7 +1,7 @@
 /*
     ===== Código de TypeScript =====
 */
-interface SuperHero {
+interface SuperHeros {
     name: string;
     age: number;
     address: Address;
@@ -14,7 +14,7 @@ interface Address {
     city: string;
 }
 
-const superHeroe: SuperHero = {
+const superHeroe: SuperHeros = {
     name: 'Spiderman',
     age: 30,
     address: {
