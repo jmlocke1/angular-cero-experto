@@ -1,4 +1,4 @@
-
+import { Types } from "./types";
 
 export class Person {
     #name: string;
@@ -79,3 +79,6 @@ const jamesBond = new Hero('007', 33, bond);
 
 console.log(jamesBond);
 console.log(jamesBond.realName);
+
+console.log('¿Es la misma clase?', Types.isSameClassName(ironman, 'Hero'));
+console.log('¿Es un número flotante?', Types.isFloat(22.E5));
