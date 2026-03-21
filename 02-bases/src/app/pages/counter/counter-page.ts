@@ -4,9 +4,10 @@ import { Component } from "@angular/core";
 
 
 @Component({
-    templateUrl: './counter.html'
+    templateUrl: './counter-page.html',
+    styleUrl: './counter-page.css'
 })
-export class CounterPageComponent {
+export class CounterPage {
     counter = 10;
 
     increaseBy(value: number) {
