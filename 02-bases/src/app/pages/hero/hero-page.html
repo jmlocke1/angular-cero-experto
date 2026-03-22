@@ -4,15 +4,26 @@
   <td>Nombre:</td>
   <dd>{{ name() }}</dd>
 
-  <td>Edad:</td>
+  <dt>Edad:</dt>
   <dd>{{ age() }}</dd>
 
-  <td>Método:</td>
+  <dt>Descripción:</dt>
   <dd>{{ getHeroDescription() }}</dd>
 
-  <td>Capitalizado:</td>
+  <dt>Descripción computada:</dt>
+  <dd>{{ heroDescription() }}</dd>
+
+  <dt>Capitalizado:</dt>
   <!-- ! Intentar  -->
   <dd> {{ name().toUpperCase() }} </dd>
+  
+  <dt>Capitalizado con Pipes:</dt>
+  <!-- ! Intentar  -->
+  <dd> {{ name() | uppercase}} </dd>
+  
+  <dt>Capitalizado Computado:</dt>
+  <!-- ! Intentar  -->
+  <dd> {{ 'Computado: ' + capitalizedName() }} </dd>
 </dl>
 
 <button (click)="changeHero()" class="btn btn-primary mx-2">
